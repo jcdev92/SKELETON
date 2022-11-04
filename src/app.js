@@ -26,6 +26,8 @@ database.sync()
     .then(() => console.log('Database synced...'))
     .catch(err => console.log('Error: ' + err));
 
+//? TODO - initModels
+
 app.get('/', (req, res) => {
     res.status(200).json({ message: 'Hello World!', users: `localhost:${port}/api/v1/users`});
 });
